@@ -9,9 +9,5 @@
  */
 angular.module('xplosionApp')
   .controller('BlogCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
   });

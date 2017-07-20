@@ -20,47 +20,33 @@
     <!-- /////    End X-PLOSION intro -->
     <br>
     <!-- /////    Blog    ///// -->
-    <div class="row panel">
+    <div class="row panel" ng-model="productPosts">
       <div class="col-sm-6">
         <div class="elA panel-heading"><h3>X-PLOSION  Products</h3></div>
-        <div class="elA"><h4>We say No to artificial flavors</h4></div>
-        <div class="col-xs-4">
-          <img class="xplosion-thumb" src="images/img2.png" alt="blog1!"><br>
-        </div>
-        <div class="col-xs-8">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </p>
-        </div>
-        <div class="elA"><h4>We say No to artificial flavors</h4></div>
-        <div class="col-xs-4">
-          <img class="xplosion-thumb" src="images/img4.png" alt="product!"><br>
-        </div>
-        <div class="col-xs-8">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </p>
+        <div ng-repeat="post in productPosts">
+          <div class="elA"><h4>{{ post.title }}</h4></div>
+          <div class="col-xs-4">
+            <img class="xplosion-thumb" src="images/{{ post.imgName }}" alt="blog1!"><br>
+          </div>
+          <div class="col-xs-8">
+            <p>
+              {{ post.description }}
+            </p>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="elB panel-heading"><h3>X-PLOSION  Expansion</h3></div>
-        <div class="elB"><h4>Xplosion is a hit in Japan</h4></div>
-        <div class="col-xs-4">
-          <img class="xplosion-thumb" src="images/img3.png" alt="japan!"><br>
-        </div>
-        <div class="col-xs-8">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </p>
-        </div>
-        <div class="elB"><h4>Xplosion is a hit in Japan</h4></div>
-        <div class="col-xs-4">
-          <img class="xplosion-thumb" src="images/img5.png" alt="xplosion!"><br>
-        </div>
-        <div class="col-xs-8">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </p>
+        <div ng-repeat="post in expansionPosts">
+          <div class="elB"><h4>{{ post.title }}</h4></div>
+          <div class="col-xs-4">
+            <img class="xplosion-thumb" src="images/{{ post.imgName }}" alt="japan!"><br>
+          </div>
+          <div class="col-xs-8">
+            <p>
+              {{ post.description }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
