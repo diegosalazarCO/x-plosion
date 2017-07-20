@@ -1,0 +1,113 @@
+ <!-- /////   SECTIONS    ///// -->
+
+ <div class="row">
+  <!-- /////    Left Section    ///// -->
+  <div class="col-xs-12 col-md-8">
+    <!-- /////    X-PLOSION intro -->
+    <div class="row">
+      <div class="col-xs-12 col-md-7">
+        <h1>X-PLOSION</h1>
+        <h2>Soda for Superheroes!</h2>
+        <p><span>Boilerplate is a professional front-end template for building fast, robust</span></p>
+        <p>
+          Angula pleasure scaffolding your apps arJS is a toolset for building the framework most suited to your application development. . We have a bold vision to reinvent the consumer experience. Every day, consumers are becoming more mindful.
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <img class="xplosion-img" src="images/img1.png" alt="Soda!"><br>
+      </div>
+    </div>
+    <!-- /////    End X-PLOSION intro -->
+    <br>
+    <!-- /////    Blog    ///// -->
+    <div class="row panel">
+      <div class="col-sm-6">
+        <div class="elA panel-heading"><h3>X-PLOSION  Products</h3></div>
+        <div class="elA"><h4>We say No to artificial flavors</h4></div>
+        <div class="col-xs-4">
+          <img class="xplosion-thumb" src="images/img2.png" alt="blog1!"><br>
+        </div>
+        <div class="col-xs-8">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="elA"><h4>We say No to artificial flavors</h4></div>
+        <div class="col-xs-4">
+          <img class="xplosion-thumb" src="images/img4.png" alt="product!"><br>
+        </div>
+        <div class="col-xs-8">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="elB panel-heading"><h3>X-PLOSION  Expansion</h3></div>
+        <div class="elB"><h4>Xplosion is a hit in Japan</h4></div>
+        <div class="col-xs-4">
+          <img class="xplosion-thumb" src="images/img3.png" alt="japan!"><br>
+        </div>
+        <div class="col-xs-8">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+        <div class="elB"><h4>Xplosion is a hit in Japan</h4></div>
+        <div class="col-xs-4">
+          <img class="xplosion-thumb" src="images/img5.png" alt="xplosion!"><br>
+        </div>
+        <div class="col-xs-8">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /////    End Blog    ///// -->
+  </div>
+  <!-- /////    End Left Section    ///// -->
+
+  <!-- /////    Sidebar     /////-->
+  <div class="col-xs-12 col-md-4">
+    <div class="panel">
+      <div class="">
+        <h5>Contact</h5>
+        <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+          <!-- name -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+              <label>Name</label>
+              <input type="text" name="name" class="form-control" ng-model="user.name">
+          </div>
+          
+          <!-- email -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" ng-model="user.email" required>
+              <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+          </div>
+
+          <!-- message -->
+          <div class="form-group" ng-class="{ 'has-error' : userForm.message.$invalid && !userForm.message.$pristine }">
+              <label>Message</label>
+              <textarea name="message" class="form-control" rows="4" ng-model="user.message" ng-minlength="5" required></textarea>
+              <p ng-show="userForm.message.$error.minlength" class="help-block">message is too short.</p>
+              <p ng-show="userForm.message.$error.required" class="help-block">Please write a message.</p>
+          </div>
+          
+          <button type="submit" class="btn btn-default" ng-disabled="userForm.$invalid">Send</button>
+          <!-- <br> -->
+        </form>
+      </div>
+    </div>
+    <!-- <br> -->
+    <div class="panel">
+      <div class="">
+        <h5>Follow us</h5>
+      </div>
+    </div>
+    
+  </div>
+  <!-- /////    End Sidebar    ///// -->
+
+ </div>
